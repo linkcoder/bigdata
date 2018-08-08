@@ -8,6 +8,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.1.3/spark-core_2.11-2.1.3-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.ideaLibSources/spark-core_2.11-2.1.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,6 +1,5 @@
 package cn.fg.scala
 
-import org.apache.hadoop.yarn.util.ApplicationClassLoader
 import org.apache.spark.{SparkConf, SparkContext}
 
 object WordCount {
@@ -12,7 +11,7 @@ object WordCount {
     conf.setMaster("local")
 
     val sc=new SparkContext(conf)
-    val path="D:\\javapro\\bigdata\\sparkOperate\\src\\main\\resources\\data\\test1"
+    val path="E:\\java-maven-pro\\bigdata\\sparkOperate\\src\\main\\resources\\data\\test1"
     val rdd1=sc.textFile(path)
 
     val rdd2=rdd1.flatMap(line => line.split(" "))

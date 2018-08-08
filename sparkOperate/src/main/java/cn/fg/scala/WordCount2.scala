@@ -13,7 +13,7 @@ object WordCount2 {
     conf.setMaster("local[3]")
 
     val sc=new SparkContext(conf)
-    val path="D:\\javapro\\bigdata\\sparkOperate\\src\\main\\resources\\data\\test1"
+    val path="E:\\java-maven-pro\\bigdata\\sparkOperate\\src\\main\\resources\\data\\test1"
     val rdd1=sc.textFile(path,3)
 
     val rdd2=rdd1.flatMap(line => line.split(" "))
@@ -28,7 +28,7 @@ object WordCount2 {
       (word,1)
     })
 
-    val rdd5= rdd4.reduceByKey(_ + _)
+    val rdd5= rdd4.reduceByKey(_+_)
 
     val r=rdd5.collect()
 
