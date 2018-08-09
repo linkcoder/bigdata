@@ -1,4 +1,4 @@
-package cn.fg;
+package cn.fg.java;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
@@ -7,9 +7,6 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.PairFunction;
 import scala.Tuple2;
-
-import java.util.Iterator;
-import java.util.function.Consumer;
 
 public class Invertedindex {
 
