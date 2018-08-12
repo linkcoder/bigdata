@@ -10,7 +10,7 @@ object Distinct {
     val sc = new SparkContext(conf)
     val path="E:\\java-maven-pro\\bigdata\\sparkOperate\\src\\main\\resources\\data\\distinct"
 
-    val rdd1=sc.textFile(path,4);
+    val rdd1=sc.textFile(path,4)
 
     rdd1.distinct().collect().foreach(println)
 
