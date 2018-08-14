@@ -5,7 +5,7 @@ import org.apache.spark.ml.linalg.Vectors
 import org.apache.spark.ml.regression.LinearRegression
 import org.apache.spark.sql.SparkSession
 
-object BysWineSort {
+object WineML {
   def main(args: Array[String]): Unit = {
     val conf=new SparkConf();
     conf.setAppName("ml_BYSWine")
