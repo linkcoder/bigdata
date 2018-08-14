@@ -15,8 +15,6 @@ object StreamingWindows {
 
     val pairs=words.map((_,1))
 
-
-
     val re=pairs.reduceByKeyAndWindow((v1:Int,v2:Int)=> v1+v2
                                       ,Seconds(6),Seconds(4))
     re.print()
