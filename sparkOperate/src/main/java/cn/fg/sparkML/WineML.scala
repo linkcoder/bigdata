@@ -52,6 +52,9 @@ object WineML {
     //拟合训练集
     val model=lr.fit(trainningDF)
 
+    val modelPath="E:\\java-maven-pro\\bigdata\\sparkOperate\\src\\main\\resources\\data\\ml\\model\\wineML"
+    model.save(modelPath)
+
     //创建内存测试数据数据框
     val testDF = sess.createDataFrame(Seq((5.0, Vectors.dense(7.4,
       0.7, 0.0, 1.9, 0.076, 25.0, 67.0, 0.9968, 3.2, 0.68, 9.8)), (5.0,
