@@ -2,7 +2,7 @@ package cn.fg.sparkML
 
 import org.apache.spark.SparkConf
 import org.apache.spark.ml.linalg.Vectors
-import org.apache.spark.ml.regression.{LinearRegression, LinearRegressionModel}
+import org.apache.spark.ml.regression.LinearRegressionModel
 import org.apache.spark.sql.SparkSession
 
 object WineMLSaveModel {
