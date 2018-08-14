@@ -24,8 +24,8 @@ object WineML {
       w(2).toDouble, w(3).toDouble, w(4).toDouble, w(5).toDouble, w(6).toDouble, w(7).toDouble, w(8).toDouble
       , w(9).toDouble, w(10).toDouble, w(11).toDouble))
 
-    println("============加载数据============")
-    wineRdd.foreach(println)
+//    println("============加载数据============")
+//    wineRdd.foreach(println)
 
     import sess.implicits._
 
