@@ -1,4 +1,4 @@
-package cn.fg.java;
+package cn.fg.sparkStreaming;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.function.Function0;
